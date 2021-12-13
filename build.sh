@@ -25,6 +25,11 @@ git clone --depth=1 $SD_LINK $SD_PATH
 ls
 echo " ===+++ Building Recovery +++==="
 chmod u+x ./device/xiaomi/star/*
+echo -------------------------------
+cd device/xiaomi/sm8350-common
+ls
+cd -
+
 ./device/xiaomi/star/extract-files.sh
 ./device/xiaomi/star/setup-makefiles.sh
 . build/envsetup.sh
