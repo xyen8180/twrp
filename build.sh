@@ -22,10 +22,13 @@ repo sync
 repo sync
 git clone --depth=1 $DT_LINK $DT_PATH
 git clone --depth=1 $SD_LINK $SD_PATH
-ls
+
 echo " ===+++ Building Recovery +++==="
 chmod u+x ./device/xiaomi/star/*
 echo -------------------------------
+cd tools/extract-utils/
+ls
+cd -
 cd device/xiaomi/star/
 
 ./extract-files.sh
