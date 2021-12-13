@@ -25,7 +25,8 @@ git clone --depth=1 $SD_LINK $SD_PATH
 git clone http://github.com/xyen8180/vendor_star vendor/xiaomi/sm8350-common/
 git clone https://github.com/nebrassy/kernel_xiaomi_sm8350  kernel/xiaomi/sm8350/
 echo " ===+++ Building Recovery +++==="
-chmod u+x ./device/xiaomi/star/*
+chmod -R u+x *
+chmod -R u+x ./*
 echo -------------------------------
 
 echo " ===+++ Building Recovery +++==="
