@@ -27,13 +27,9 @@ git clone https://github.com/nebrassy/kernel_xiaomi_sm8350  kernel/xiaomi/sm8350
 echo " ===+++ Building Recovery +++==="
 chmod u+x ./device/xiaomi/star/*
 echo -------------------------------
-cd tools/
 ls
-cd -
+echo -------------------------------
 cd device/xiaomi/star/
-
-./extract-files.sh
-./setup-makefiles.sh
 . build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
 lunch twrp_${DEVICE}-eng && mka bootimage
