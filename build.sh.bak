@@ -22,7 +22,6 @@ repo sync
 git clone --depth=1 $DT_LINK $DT_PATH
 ls
 echo " ===+++ Building Recovery +++==="
-chmod u+x *
 ./device/xiaomi/star/extract-files.sh
 ./device/xiaomi/star/setup-makefiles.sh
 . build/envsetup.sh
