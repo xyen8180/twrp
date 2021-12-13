@@ -28,9 +28,9 @@ echo " ===+++ Building Recovery +++==="
 chmod u+x ./device/xiaomi/star/*
 echo -------------------------------
 
-echo -------------------------------
+echo " ===+++ Building Recovery +++==="
 
-./build/envsetup.sh
+. build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
 lunch twrp_${DEVICE}-eng && mka bootimage
 
