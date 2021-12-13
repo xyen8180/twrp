@@ -22,8 +22,8 @@ repo sync
 git clone --depth=1 $DT_LINK $DT_PATH
 ls
 echo " ===+++ Building Recovery +++==="
-./extract-files.sh
-./setup-makefiles.sh
+./device/xiaomi/star/extract-files.sh
+./device/xiaomi/star/setup-makefiles.sh
 . build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
 lunch twrp_${DEVICE}-eng && mka bootimage
