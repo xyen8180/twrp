@@ -20,19 +20,17 @@ echo " ===+++ Syncing Recovery Sources +++==="
 repo init --depth=1 -u $MANIFEST
 repo sync
 repo sync
-#git clone --depth=1 $DT_LINK $DT_PATH
-#git clone --depth=1 $SD_LINK $SD_PATH
-#git clone http://github.com/xyen8180/vendor_star vendor/xiaomi/sm8350-common/
-#git clone https://github.com/nebrassy/kernel_xiaomi_sm8350  kernel/xiaomi/sm8350/
+git clone --depth=1 $DT_LINK $DT_PATH
+git clone --depth=1 $SD_LINK $SD_PATH
+git clone http://github.com/xyen8180/vendor_star vendor/xiaomi/sm8350-common/
+git clone https://github.com/nebrassy/kernel_xiaomi_sm8350  kernel/xiaomi/sm8350/
 echo " ===+++ Building Recovery +++==="
 chmod u+x ./device/xiaomi/star/*
 echo -------------------------------
-cd build
-ls
-cd -
+
 echo -------------------------------
-cd device/xiaomi/star/
-. build/envsetup.sh
+
+.build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
 lunch twrp_${DEVICE}-eng && mka bootimage
 
