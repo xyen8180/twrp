@@ -26,7 +26,7 @@ git clone --depth=1 $SD_LINK $SD_PATH
 echo " ===+++ Building Recovery +++==="
 chmod u+x ./device/xiaomi/star/*
 echo -------------------------------
-cd tools/extract-utils/
+cd tools/
 ls
 cd -
 cd device/xiaomi/star/
