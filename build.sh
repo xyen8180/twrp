@@ -26,12 +26,10 @@ ls
 echo " ===+++ Building Recovery +++==="
 chmod u+x ./device/xiaomi/star/*
 echo -------------------------------
-cd device/xiaomi/sm8350-common
-ls
-cd -
+cd device/xiaomi/star/
 
-./device/xiaomi/star/extract-files.sh
-./device/xiaomi/star/setup-makefiles.sh
+./extract-files.sh
+./setup-makefiles.sh
 . build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
 lunch twrp_${DEVICE}-eng && mka bootimage
