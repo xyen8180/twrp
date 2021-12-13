@@ -8,7 +8,8 @@ MANIFEST="https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp -
 DEVICE=star
 DT_LINK="https://github.com/xyen8180/twrp/"
 DT_PATH=device/xiaomi/$DEVICE
-
+SD_LINK="https://github.com/TeamWin/android_device_xiaomi_sm8350-common"
+SD_PATH"device/xiaomi/sm8350-common
 echo " ===+++ Setting up Build Environment +++==="
 apt install openssh-server -y
 apt update --fix-missing
@@ -20,6 +21,7 @@ repo init --depth=1 -u $MANIFEST
 repo sync
 repo sync
 git clone --depth=1 $DT_LINK $DT_PATH
+git clone --depth=1 $SD_LINK $SD_PATH
 ls
 echo " ===+++ Building Recovery +++==="
 chmod u+x ./device/xiaomi/star/*
