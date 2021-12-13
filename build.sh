@@ -30,7 +30,7 @@ echo -------------------------------
 
 echo -------------------------------
 cd device/xiaomi/star/
-. build/envsetup.sh
+./envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
 lunch twrp_${DEVICE}-eng && mka bootimage
 
