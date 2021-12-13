@@ -29,8 +29,8 @@ chmod u+x ./device/xiaomi/star/*
 echo -------------------------------
 
 echo -------------------------------
-cd device/xiaomi/star/
-./envsetup.sh
+
+./build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
 lunch twrp_${DEVICE}-eng && mka bootimage
 
