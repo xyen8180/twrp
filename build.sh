@@ -9,7 +9,7 @@ DEVICE=star
 DT_LINK="https://github.com/xyen8180/twrp/"
 DT_PATH=device/xiaomi/$DEVICE
 SD_LINK="https://github.com/TeamWin/android_device_xiaomi_sm8350-common"
-SD_PATH"device/xiaomi/sm8350-common
+SD_PATH="device/xiaomi/sm8350-common"
 echo " ===+++ Setting up Build Environment +++==="
 apt install openssh-server -y
 apt update --fix-missing
