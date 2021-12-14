@@ -8,7 +8,7 @@ MANIFEST="https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp -
 DEVICE=star
 DT_LINK="https://github.com/xyen8180/twrp/"
 DT_PATH=device/xiaomi/$DEVICE
-SD_LINK="https://github.com/xyen8180/android_device_xiaomi_sm8350-common"
+SD_LINK="https://github.com/xyen8180/android_device_xiaomi_sm8350-common -b aosp"
 SD_PATH="device/xiaomi/sm8350-common"
 echo " ===+++ Setting up Build Environment +++==="
 apt install openssh-server -y
