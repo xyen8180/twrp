@@ -25,3 +25,6 @@ PRODUCT_COPY_FILES += \
 TARGET_RECOVERY_DEVICE_DIRS += \
     $(DEVICE_PATH)/twrp
 
+PRODUCT_PACKAGES += \
+    qcom_decrypt \
+    qcom_decrypt_fbe

@@ -20,3 +20,7 @@ ODM_MANIFEST_FILES := $(DEVICE_PATH)/manifest.xml
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := star
+BOARD_USES_QCOM_FBE_DECRYPTION := true
+BOARD_USES_QCOM_DECRYPTION := true
+
+BOARD_KERNEL_CMDLINE += androidboot.force_normal_boot=1
