@@ -8,7 +8,7 @@
 include device/xiaomi/sm8350-common/BoardConfigCommon.mk
 
 # Inherit proprietary blobs
--include vendor/xiaomi/star/BoardConfigVendor.mk
+-include vendor/xiaomi/sm8350-common/BoardConfigVendor.mk
 
 DEVICE_PATH := device/xiaomi/star
 
