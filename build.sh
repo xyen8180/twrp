@@ -2,7 +2,7 @@
 
 # Just a basic script U can improvise lateron asper ur need xD 
 
-MANIFEST="https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp -b twrp-11"
+MANIFEST="https://github.com/LineageOS/android"
 
 
 DEVICE=star
