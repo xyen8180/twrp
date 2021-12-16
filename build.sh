@@ -17,13 +17,13 @@ apt install openssh-server -y
 mkdir ~/twrp && cd ~/twrp
 
 echo " ===+++ Syncing Recovery Sources +++==="
-repo init --depth=1 -u $MANIFEST
+repo init --depth=1 -u $MANIFEST 2>/dev/null
 repo sync
 repo sync
-git clone --depth=1 $DT_LINK $DT_PATH
-git clone --depth=1 $SD_LINK $SD_PATH
-git clone http://github.com/xyen8180/vendor_star vendor/xiaomi/sm8350-common/
-git clone https://github.com/nebrassy/kernel_xiaomi_sm8350  kernel/xiaomi/sm8350/
+git clone --depth=1 $DT_LINK $DT_PATH 2>/dev/null
+git clone --depth=1 $SD_LINK $SD_PATH 2>/dev/null
+git clone http://github.com/xyen8180/vendor_star vendor/xiaomi/sm8350-common/ 2>/dev/null
+git clone https://github.com/nebrassy/kernel_xiaomi_sm8350  kernel/xiaomi/sm8350/ 2>/dev/null
 echo " ===+++ Building Recovery +++==="
 chmod -R u+x *
 chmod -R u+x ./*
